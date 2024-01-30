@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="circulo"></div>
+
+    <img src="./logo(1).png" alt="logo" class='logo'>
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é um café, é um <span>Starbucks</span></h2>
+
+            <p>Todos os dias, os parceiros (funcionários) da Starbucks vão trabalhar na esperança de fazer duas coisas:
+                compartilhar um ótimo café com seus amigos e ajudar a tornar o mundo um pouco melhor. </p>
+            <button>Deixe o Seu Like</button>
+        </div>
+        <div class="caixa-imagem">
+            <img src="/img1.png" alt="copo starbucks" class='starbucks'>
+        </div>
+    </div>
+    <div class="menu">
+        <img src="img1.png" alt="copo 1" class='copo-menor verde'>
+        <img src="img-pequena2.png" alt="copo 2" class='copo-menor amarelo'>
+        <img src="img3.png" alt="copo 3" class='copo-menor rosa'>
+    </div>
+
+</body>
+<script>
+    let circulo = document.querySelector(".circulo")
+    let copoImg = document.querySelector(".starbucks")
+    let verde = document.querySelector(".verde")
+    let amarelo = document.querySelector(".amarelo")
+    let rosa = document.querySelector(".rosa")
+
+    verde.addEventListener("click", () => {
+        copoImg.src = "./img1.png"
+        circulo.style.background = "#017143"
+    })
+
+    amarelo.addEventListener("click", () => {
+        copoImg.src = "img/img2.png"
+        circulo.style.background = "#eb7495"
+
+    });
+
+    rosa.addEventListener("click", () => {
+        copoImg.src = "img3.png"
+        circulo.style.background = "#d752b1"
+
+    });
+
+
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2013769123665602"
+     crossorigin="anonymous"></script>
+</html>
